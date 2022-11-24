@@ -1,0 +1,533 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Accelerated e-Mobility Revolution for India’s Transportation | NITI Aayog">
+    <script>
+        const BASE_URL = "https://e-amrit.niti.gov.in/";
+    </script>
+
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/plugins/font-awesome/css/font-awesome.min.css">
+    <!----- Favicon-------->
+    <link rel="icon" href="https://e-amrit.niti.gov.in/assets/admin/dist/img/new-fronend-img/eamrit-favicon.png" />
+    <!-- iCheck -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/plugins/iCheck/flat/blue.css">
+
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/plugins/morris/morris.css">
+
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/plugins/datepicker/datepicker3.css">
+
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/plugins/daterangepicker/daterangepicker-bs3.css">
+
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/plugins/select2/select2.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/dist/css/adminlte.css">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/plugins/datatables/dataTables.bootstrap4.css">
+    <!----- Swiper Css ---->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/dist/css/swiper.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/dist/css/admin-style.css">
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/dist/css/normal_font_size.css" title="font_resizer">
+    <link href="https://e-amrit.niti.gov.in/assets/admin/dist/css/white_contrast.css" id="highContrastStylesheet" rel="stylesheet" type="text/css">
+    <!-- Frontend Nav Style ------>
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/dist/css/frontendnavstyle.css">
+    <!-- admin portal style -->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/dist/css/admin-portal.css">
+    <!---- Fontend Responsive Style ---->
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/admin/dist/css/frontend-responsive.css">
+    <!-- jQuery -->
+    <script src="https://e-amrit.niti.gov.in/assets/admin/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="https://e-amrit.niti.gov.in/assets/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://e-amrit.niti.gov.in/assets/admin/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="https://e-amrit.niti.gov.in/assets/admin/plugins/datatables/dataTables.bootstrap4.js"></script>
+
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/fronend/new-css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://e-amrit.niti.gov.in/assets/fronend/new-css/angular-block-ui.min.css">
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://e-amrit.niti.gov.in/assets/fronend/new-js/popper.min.js"></script>
+    <!-- Frontend Nav Script ------>
+
+    <script src="https://e-amrit.niti.gov.in/assets/admin/dist/js/swiper.min.js"></script>
+
+    <!-- Font style links  -->
+    <link href="https://e-amrit.niti.gov.in/assets/fronend/new-css/fontfamily.css" rel="stylesheet">
+    <script src="https://e-amrit.niti.gov.in/assets/frontend/new-js/angular.min.js"></script>
+    <script src="https://e-amrit.niti.gov.in/assets/frontend/new-js/angular-sanitize.js"></script>
+        <script src="https://e-amrit.niti.gov.in/assets/lib/toastr/toastr.min.js"></script>
+        <link href="https://e-amrit.niti.gov.in/assets/lib/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script> -->
+    <script src="https://e-amrit.niti.gov.in/assets/frontend/new-js/angular-block-ui.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script> -->
+    <script src="https://e-amrit.niti.gov.in/assets/myjs/app.js"></script>
+    <!---- Screen reader acess js ------>
+    <script src="https://e-amrit.niti.gov.in/assets/admin/dist/js/responsivevoice.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,800;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,800;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <title>PUBLIC CHARGING CALCULATOR</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B546JC7S0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B546JC7S0F');
+    </script>
+</head>
+
+<body>
+    <div class="tools-page-banner">
+        <div class="container mt-107">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="about-us-title">Public Charging Calculator</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-40 welcome-bg" ng-app="myApp" ng-controller="publicChargerCtrl">
+        <div class="container">
+            <div class="row pt-50">
+                <!-- <div class="col-md-4 col-sm-12 col-lg-4">
+                    <img class="img-fluid" src="./assets/admin/dist/img/new-frontend/myth1.png">
+                </div> -->
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <p class="ev-awareness-para pt-2">
+                        Want to find out how long will it take to charge your electric vehicle with a
+                        slow, fast or rapid charger at a public place along with its
+                        cost? The public charging calculator will help you estimate the
+                        time as well as the expenses.</p>
+
+                </div>
+            </div>
+
+            <div class="row pt-3" ng-if="showform">
+                <form name="calform" class="w-100">
+                    <div class="col-md-12 col-sm-12 col-lg-12">
+                        <div class="calculator-box">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="how-much-title text-white text-center mt-4 mb-3">How much will be the
+                                        time and cost of charging at public place?</h2>
+
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="row mb-2">
+                                    <div class="col-lg-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 vehicle-segment mr-3">Vehicle Segment</p>
+                                                    <a href="javascript:void(0);" data-toggle="tooltip" title="Choose the type of the electric vehicle "><i class="fa fa-info-circle text-white" aria-hidden="true"></i></a>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <select name="" ng-model="calobj.vechile_segment" type="text" class="select-box-custom" ng-change="getOnChangeValueOnVechileSegment()" required>
+                                                    <option value="" selected>Select</option>
+                                                    <option ng-repeat="obj in vehicleSegmentList" value="{{obj.id}}">
+                                                        {{obj.display_segment}}
+                                                    </option>
+                                                    <option value="4">Bus</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6 col-6  col-sm-12">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 vehicle-segment mr-3">Cost per kWh</p>
+                                                    <a href="javascript:void(0);" data-toggle="tooltip" title="Amount charged by the charging station "><i class="fa fa-info-circle text-white" aria-hidden="true"></i></a>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="pos-relative d-flex align-items-center">
+                                                    <input type="text" name="cost_kwh" class="battery-capacity-input" placeholder="₹" ng-model="calobj.cost_kwh" autocomplete="off" required>
+                                                    <div class="select-box-with-kw">₹</div>
+                                                </div>
+
+                                                <div>
+                                                    <span style="color:red" ng-show="calform.cost_kwh.$dirty && calform.cost_kwh.$invalid">Enter
+                                                        valid numeric value only</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row mb-2">
+                                    <div class="col-lg-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 vehicle-segment mr-3">Battery Capacity</p>
+                                                    <a href="javascript:void(0);" data-toggle="tooltip" title="Full capacity of the battery "><i class="fa fa-info-circle text-white" aria-hidden="true"></i></a>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="pos-relative d-flex align-items-center">
+                                                    <input type="text" name="battery_capacity" ng-model="calobj.battery_capacity" class="battery-capacity-input" placeholder="" ng-pattern="/^[+]?[0-9]+(\.[0-9]{1,2})?$/" autocomplete="off" required>
+                                                    <div class="select-box-with-kw">kWh</div>
+                                                </div>
+                                                <div> <span style="color:red" ng-show="calform.battery_capacity.$dirty && calform.battery_capacity.$invalid">Enter
+                                                        valid numeric value only</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 vehicle-segment mr-3">Select Distance or Battery
+                                                        Level</p>
+                                                    <a href="javascript:void(0);" data-toggle="tooltip" title="Choose the method as per your convenience "><i class="fa fa-info-circle text-white" aria-hidden="true"></i></a>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <select name="" ng-model="calobj.compared_type" type="text" class="select-box-custom" required>
+                                                    <option value="" selected>Select</option>
+                                                    <option value="Distance">Distance</option>
+                                                    <option value="Battery">Battery </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-lg-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 vehicle-segment mr-3"> Range</p>
+                                                    <a href="javascript:void(0);" data-toggle="tooltip" title="Total distance that can be covered with full charge "><i class="fa fa-info-circle text-white" aria-hidden="true"></i></a>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="pos-relative d-flex align-items-center">
+                                                    <input type="text" name="ev_range" class="battery-capacity-input" placeholder="" ng-model="calobj.ev_range" ng-pattern="/^[+]?[0-9]+(\.[0-9]{1,2})?$/" ng-change="checkDistancetravelledValue()" autocomplete="off" required>
+                                                    <div class="select-box-with-kw">km</div>
+                                                </div>
+                                                <div> <span style="color:red" ng-show="calform.ev_range.$dirty && calform.ev_range.$invalid">Enter
+                                                        valid numeric value only</span></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6" ng-if="calobj.compared_type == 'Distance'">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 vehicle-segment mr-3">Distance to be travelled</p>
+                                                    <a href="javascript:void(0);" data-toggle="tooltip" title="Total distance to be covered in the journey "><i class="fa fa-info-circle text-white" aria-hidden="true"></i></a>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="pos-relative d-flex align-items-center">
+                                                    <input type="text" name="distance_to_be_travelled" class="battery-capacity-input" placeholder="" ng-model="calobj.distance_to_be_travelled" autocomplete="off" ng-pattern="/^[+]?[0-9]+(\.[0-9]{1,2})?$/" ng-change="checkDistancetravelledValue()" required>
+                                                    <div class="select-box-with-kw">km</div>
+                                                </div>
+                                                <div> <span style="color:red" ng-show="calform.distance_to_be_travelled.$dirty && calform.distance_to_be_travelled.$invalid">Enter
+                                                        valid numeric value only</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6" ng-if="calobj.compared_type == 'Battery'">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 vehicle-segment mr-3">Battery Level at Start</p>
+                                                    <a href="javascript:void(0);" data-toggle="tooltip" title=" Battery level at the start of your vehicle’s charging "><i class="fa fa-info-circle text-white" aria-hidden="true"></i></a>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="pos-relative d-flex align-items-center">
+                                                    <input type="text" name="battery_start_range" class="battery-capacity-input" placeholder="" autocomplete="off" ng-model="calobj.battery_start_range" ng-pattern="/^[+]?[0-9]+(\.[0-9]{1,2})?$/" ng-change="percentageCheck()" required>
+                                                    <div class="select-box-with-kw">%</div>
+                                                </div>
+                                                <div> <span style="color:red" ng-show="calform.battery_start_range.$dirty && calform.battery_start_range.$invalid">Enter
+                                                        valid numeric value only</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-lg-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 vehicle-segment mr-3"> Public Charger</p>
+                                                    <a href="javascript:void(0);" data-toggle="tooltip" title=" Power of the public charger "><i class="fa fa-info-circle text-white" aria-hidden="true"></i></a>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 col-sm-12">
+                                                <div class="pos-relative d-flex align-items-center">
+                                                    <input type="text" name="public_charger" class="battery-capacity-input" placeholder="" ng-model="calobj.public_charger" autocomplete="off" ng-pattern="/^[+]?[0-9]+(\.[0-9]{1,2})?$/" required>
+                                                    <div class="select-box-with-kw">kW</div>
+                                                </div>
+                                                <div> <span style="color:red" ng-show="calform.public_charger.$dirty && calform.public_charger.$invalid">Enter
+                                                        valid numeric value only</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-6" ng-if="calobj.compared_type == 'Battery'">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6  col-sm-12">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="mb-0 vehicle-segment mr-3">Battery Level at End</p>
+                                                    <a href="javascript:void(0);" data-toggle="tooltip" title="Desired battery level at the end of your vehicle’s charging "><i class="fa fa-info-circle text-white" aria-hidden="true"></i></a>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6  col-sm-12">
+                                                <div class="pos-relative d-flex align-items-center">
+                                                    <input type="text" name="battery_end_range" class="battery-capacity-input" placeholder="" ng-model="calobj.battery_end_range" ng-pattern="/^[+]?[0-9]+(\.[0-9]{1,2})?$/" ng-change="percentageCheck()" required>
+                                                    <div class="select-box-with-kw">%</div>
+                                                </div>
+                                                <div> <span style="color:red" ng-show="calform.battery_end_range.$dirty && calform.battery_end_range.$invalid">Enter
+                                                        valid numeric value only</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6"></div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="d-flex align-item-center justify-content-between">
+                                            <button type="button" ng-disabled="!calform.$valid" class="btn calculate-total-cost-btn mt-4" ng-click="getCalculateCost()">Calculate Total
+                                                Cost</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row " ng-if="showcalculation">
+                <div class="col-md-12 col-sm-12 col-lg-12">
+                    <div class="how-much-save-box">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                <h2 class="How-much-will">Should I prefer home charging?</h2>
+
+                                <p class="ev-awareness-para pt-3" ng-if="calobj.compared_type == 'Distance'"> The cost of electricity at home ranges from ₹4/kWh – ₹11.82/kWh. Therefore,
+                                    the total cost for the same charge at home would cost approximately ₹ {{4*caldetails.case_of_distance.kWh_added | number  : 2}} to ₹ {{11.82*caldetails.case_of_distance.kWh_added | number  : 2}}.</p>
+                                <p class="ev-awareness-para pt-3" ng-if="calobj.compared_type == 'Battery'"> The cost of electricity at home ranges from ₹4/kWh – ₹11.82/kWh. Therefore,
+                                    the total cost for the same charge at home would cost approximately ₹ {{4*caldetails.case_of_battery.kWh_added | number  : 2}} to ₹ {{11.82*caldetails.case_of_battery.kWh_added | number  : 2}}.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-30" ng-if="showcalculation">
+                <div class="col-md-12 col-sm-12 col-lg-12">
+                    <div class="calculator-box">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 col-lg-4">
+                                <div class="d-flex align-items-center flex-column  pt-30 ">
+                                    <p class="mb-0 charging-time">Charging Time</p>
+                                    <div class="charging-time-hours">
+                                        <p class="mb-0" ng-if="calobj.compared_type == 'Distance'">
+                                            {{caldetails.case_of_distance.charging_time}} hrs
+                                        </p>
+                                        <p class="mb-0" ng-if="calobj.compared_type == 'Battery'">
+                                            {{caldetails.case_of_battery.charging_time}} hrs
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-lg-4">
+                                <div class="d-flex align-items-center flex-column  pt-30 ">
+                                    <p class="mb-0 charging-time">kWh added</p>
+                                    <div class="charging-time-hours">
+                                        <p class="mb-0" ng-if="calobj.compared_type == 'Distance'">
+                                            {{caldetails.case_of_distance.kWh_added}} kWh
+                                        </p>
+                                        <p class="mb-0" ng-if="calobj.compared_type == 'Battery'">
+                                            {{caldetails.case_of_battery.kWh_added}} kWh
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-lg-4">
+                                <div class="d-flex align-items-center flex-column  pt-30 ">
+                                    <p class="mb-0 charging-time">Km added</p>
+                                    <div class="charging-time-hours">
+                                        <p class="mb-0" ng-if="calobj.compared_type == 'Distance'">
+                                            {{caldetails.case_of_distance.km_added}} km
+                                        </p>
+                                        <p class="mb-0" ng-if="calobj.compared_type == 'Battery'">
+                                            {{caldetails.case_of_battery.km_added}} km
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-4 col-sm-12 col-lg-4">
+                                <div class="d-flex align-items-center flex-column pt-30  pb-30">
+                                    <p class="mb-0 charging-time">Charge Cost</p>
+                                    <div class="charging-time-hours">
+                                        <p class="mb-0 d-flex align-items-center" ng-if="calobj.compared_type == 'Distance'">
+                                            <span>
+                                                <img class="img-fluid pr-2" src="./assets/admin/dist/img/new-frontend/rupee-sign.png">
+                                            </span>{{caldetails.case_of_distance.charge_cost}}
+                                        </p>
+                                        <p class="mb-0 d-flex align-items-center" ng-if="calobj.compared_type == 'Battery'">
+                                            <span>
+                                                <img class="img-fluid pr-2" src="./assets/admin/dist/img/new-frontend/rupee-sign.png">
+                                            </span>{{caldetails.case_of_battery.charge_cost}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-lg-4">
+                                <div class="d-flex align-items-center flex-column  pt-30 pb-30">
+                                    <p class="mb-0 charging-time">Cost per km</p>
+                                    <div class="charging-time-hours">
+                                        <p class="mb-0 d-flex align-items-center" ng-if="calobj.compared_type == 'Distance'">
+                                            <span>
+                                                <img class="img-fluid pr-2" src="./assets/admin/dist/img/new-frontend/rupee-sign.png">
+                                            </span>{{caldetails.case_of_distance.cost_per_km}}
+                                        </p>
+                                        <p class="mb-0 d-flex align-items-center" ng-if="calobj.compared_type == 'Battery'">
+                                            <span>
+                                                <img class="img-fluid pr-2" src="./assets/admin/dist/img/new-frontend/rupee-sign.png">
+                                            </span>{{caldetails.case_of_battery.cost_per_km}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 col-sm-12">
+                                <div class="d-flex align-item-center justify-content-center mt-2 mb-3">
+                                    <button type="button" class="btn calculate-total-cost-btn" ng-click="showcalculationForm()">Start a new
+                                        Calculation</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<script src="https://e-amrit.niti.gov.in/assets/myjs/HomePage/PublicCharging.js"></script>
+
+<div class="container-fluid ecpowerd_bg">
+    <div class="container">
+        <div class="row align-items-end">
+            
+            
+            <div class="col-md-12">
+                <!-- <div class="pl-md-5 d-flex align-items-center flex-column">
+                    <h3 class="ecpowerdSec_head innerpage-footer-interest-txt" >Are you interested in becoming a part of India's electric vehicle community?</h3>
+                    <a href="https://e-amrit.niti.gov.in/joinus" class="interrest_registerbtn">Join Us</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://e-amrit.niti.gov.in/assets/admin/dist/js/frontendscript.js"></script>
+
+<script>
+  var siteURL = "https://e-amrit.niti.gov.in/";
+  function smallFontSize(){
+    // alert( $('link[title = "font_resizer"]').attr('href',siteURL+'assets/admin/dist/css/small_font_size.css'));
+    $('link[title = "font_resizer"]').attr('href',siteURL+'assets/admin/dist/css/small_font_size.css');
+  }
+  function normalFontSize(){
+    $('link[title = "font_resizer"]').attr('href',siteURL+'assets/admin/dist/css/normal_font_size.css');
+  }
+  function largeFontSize(){
+    $('link[title = "font_resizer"]').attr('href',siteURL+'assets/admin/dist/css/large_font_size.css');
+  }
+
+</script>
+<script >
+    var siteURL = "https://e-amrit.niti.gov.in/";
+    function whiteContrast(){
+        jQuery('link#highContrastStylesheet').attr('href',siteURL+'assets/admin/dist/css/white_contrast.css');
+  }
+  function blackContrast(){
+      jQuery('link#highContrastStylesheet').attr('href',siteURL+'assets/admin/dist/css/black_contrast.css');
+  }
+</script>
+
+<!-- <script src="https://e-amrit.niti.gov.in/assets/myjs/HomePage/Footer.js"></script> -->
+
+</body>
+
+</html>
+
